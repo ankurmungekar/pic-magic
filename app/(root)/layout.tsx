@@ -1,4 +1,5 @@
 import React from 'react'
+import { UserButton } from '@clerk/nextjs'
 
 const Layout = ({
   children,
@@ -8,7 +9,9 @@ const Layout = ({
   return (
     <main className="root">
       <div className="root-container">
-        <div className="wrapper">{children}</div>
+        <div className="wrapper">
+          <UserButton />
+          {children}</div>
       </div>
     </main>
   )
